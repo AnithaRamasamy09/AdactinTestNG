@@ -9,6 +9,8 @@ public class LoginPage_Test extends BaseTest{
 	@Test(priority=2)
 	private void ValidLoginTest() {	
 	LoginPage login=new LoginPage();
+	
+	System.out.println(" git testing");
 	input(login.getUserName(), "AnithaTest");
 	input(login.getPassword(), "Work2win!");
 	btnclick(login.getLogin());
