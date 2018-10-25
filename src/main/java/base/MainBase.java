@@ -10,7 +10,7 @@ public class MainBase {
 	public static WebDriver driver;
 
 	public static WebDriver getDriver(String url) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium_Anitha\\First Project\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:\\Selenium_Anitha\\First Project\\drivers\\geckodriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();	
 		driver.get(url);
