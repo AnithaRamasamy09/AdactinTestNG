@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="vpass" value="Work2win"/>
-  <parameter name="uName" value="AnithaTest"/>
-  <parameter name="ipass" value="**************"/>
-  <test thread-count="5" name="LoginTest(failed)">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="1" name="LoginTest2(failed)" parallel="tests">
+    <parameter name="para" value="test"/>
     <classes>
       <class name="org.adactin.login.LoginPage_Test">
         <methods>
           <include name="launchBrowser"/>
           <include name="closeSite"/>
-          <include name="ValidLoginTest" invocation-numbers="0"/>
+          <include name="test0"/>
+          <include name="test1"/>
+          <include name="test2"/>
+          <include name="test3"/>
         </methods>
       </class> <!-- org.adactin.login.LoginPage_Test -->
     </classes>
-  </test> <!-- LoginTest(failed) -->
+  </test> <!-- LoginTest2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

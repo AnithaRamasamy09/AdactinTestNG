@@ -14,7 +14,7 @@ public class BaseTest extends BasePage{
 		getDriver("http://www.adactin.com/HotelApp/index.php");
 	}
 
-	@AfterTest
+	@AfterTest(enabled=false)
 	public static void closeSite() {
 		closeBrowser();
 	}
