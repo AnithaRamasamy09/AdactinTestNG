@@ -20,6 +20,7 @@ public class MainBase {
 	public static void impWait(int seconds)
 	{
 		driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
+		System.out.println("");
 	}
 	
 	public static void closeBrowser() {
