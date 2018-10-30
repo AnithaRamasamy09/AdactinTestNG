@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test thread-count="5" name="test1(failed)">
+    <classes>
+      <class name="org.adactin.login.LoginPage_Test">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeSite"/>
+          <include name="test0"/>
+          <include name="test1"/>
+          <include name="test3"/>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- org.adactin.login.LoginPage_Test -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

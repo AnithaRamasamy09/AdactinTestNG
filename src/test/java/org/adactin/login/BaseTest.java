@@ -10,7 +10,7 @@ import base.BasePage;
 public class BaseTest extends BasePage{
 
 	@BeforeTest
-	public void launchBrowser() {
+	public void launchBrowser() throws InstantiationException, IllegalAccessException {
 		getDriver("http://www.adactin.com/HotelApp/index.php");
 	}
 
