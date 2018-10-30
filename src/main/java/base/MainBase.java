@@ -4,14 +4,17 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class MainBase {
 	
 	public static WebDriver driver;
 
 	public static WebDriver getDriver(String url) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium_Anitha\\First Project\\drivers\\chromedriver.exe");
-		driver=new ChromeDriver();
+		
+		String path=System.getProperty("user.dir");		
+		System.setProperty("webdriver.gecko.driver", path+"/drivers/geckodriver.exe");
+		driver=new FirefoxDriver();
 		driver.manage().window().maximize();	
 		driver.get(url);
 		return driver;	
@@ -19,6 +22,7 @@ public class MainBase {
 	public static void impWait(int seconds)
 	{
 		driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
+		System.out.println("");
 	}
 	
 	public static void closeBrowser() {

@@ -7,7 +7,10 @@
         <methods>
           <include name="launchBrowser"/>
           <include name="closeSite"/>
-          <include name="ValidLoginTest"/>
+          <include name="test0"/>
+          <include name="test1"/>
+          <include name="test3"/>
+          <include name="test3"/>
         </methods>
       </class> <!-- org.adactin.login.LoginPage_Test -->
     </classes>
