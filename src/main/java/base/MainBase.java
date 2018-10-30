@@ -11,7 +11,9 @@ public class MainBase {
 	public static WebDriver driver;
 
 	public static WebDriver getDriver(String url) {
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Lenovo\\git\\AdactinTestNG\\drivers\\geckodriver.exe");
+		
+		String path=System.getProperty("user.dir");		
+		System.setProperty("webdriver.gecko.driver", path+"/drivers/geckodriver.exe");
 		driver=new FirefoxDriver();
 		driver.manage().window().maximize();	
 		driver.get(url);
