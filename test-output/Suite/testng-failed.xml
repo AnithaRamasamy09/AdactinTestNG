@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="1" name="LoginTest2(failed)" parallel="tests">
-    <parameter name="para" value="test"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="org.adactin.login.LoginPage_Test">
         <methods>
@@ -10,10 +9,10 @@
           <include name="closeSite"/>
           <include name="test0"/>
           <include name="test1"/>
-          <include name="test2"/>
+          <include name="test3"/>
           <include name="test3"/>
         </methods>
       </class> <!-- org.adactin.login.LoginPage_Test -->
     </classes>
-  </test> <!-- LoginTest2(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
